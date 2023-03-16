@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6077356721:AAEj35syao79HMvprUaFiKC5VSTn9HZKzPc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6088485689:AAGwgRZELBOUNZvvxifJYhYt1LtHUasXypU")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "1923471"))
@@ -34,7 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "asuranj")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001719990269"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "8"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
