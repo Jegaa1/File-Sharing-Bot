@@ -7,13 +7,13 @@ from config import ADMINS
 from helper_func import encode, get_message_id
 
 # get media type
-    media_type = message.document or message.video or message.audio or message.photo
+media_type = message.document or message.video or message.audio or message.photo
 # get file name
-    file_name = media_type.file_name
+file_name = media_type.file_name
 # get file size in MB
-    file_size = round(media_type.file_size/1024/1024, 3)
+file_size = round(media_type.file_size/1024/1024, 3)
 # get caption (if any)
-    caption = message.caption or ""
+caption = message.caption or ""
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & filters.command('batch'))
 async def batch(client: Client, message: Message):
